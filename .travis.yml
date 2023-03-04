@@ -13,6 +13,7 @@ script:
   - black --check .
   - flake8 --max-line-length 99 --ignore=F401 .
   - coverage run --source=polls manage.py test
+  - coverage report
 
 deploy:
   provider: elasticbeanstalk
