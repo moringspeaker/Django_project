@@ -7,13 +7,12 @@ install:
   - pip install -r requirements.txt
 
 before_script:
-  - python manage.py migrate
   - python manage.py collectstatic --noinput
 
 script:
   - black --check .
   - flake8 --max-line-length 99 .
-  - coverage run --source=mpolls manage.py test
+  - coverage run --source=polls manage.py test
 
 deploy:
   provider: elasticbeanstalk
