@@ -22,6 +22,8 @@ deploy:
   app: mysite-polls
   env: https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/applications
   bucket_name: minibus
+  endpoint: s3.us-east-1.amazonaws.com
+
   on:
     branch: main
 
