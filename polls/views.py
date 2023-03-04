@@ -1,13 +1,15 @@
 from time import timezone
+
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Question, Choice
-
+from django.template import loader
 from django.urls import reverse
 from django.views import generic
 
 
 # write some data into the database
+
 
 class IndexView(generic.ListView):
     template_name = "polls/index.html"
