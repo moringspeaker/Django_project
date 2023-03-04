@@ -22,7 +22,8 @@ deploy:
   app: mysite-polls
   env: https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/applications
   bucket_name: minibus
-  endpoint: http://minibus.s3-us-east-1.amazonaws.com/index.html
+  before_deploy:
+    - export AWS_DEFAULT_REGION=us-east-1
   on:
     branch: main
 
