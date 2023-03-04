@@ -8,9 +8,7 @@ from django.views import generic
 
 
 # write some data into the database
-question = Question.objects.get(pk=1)
-choice = Choice(question=question, choice_text="Red", votes=0)
-choice.save()
+
 class IndexView(generic.ListView):
     template_name = "polls/index.html"
     context_object_name = "latest_question_list"
