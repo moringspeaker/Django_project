@@ -18,12 +18,11 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAV53JPCOWCYLBA74Q
   secret_access_key: 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
-  region: us-west-2
+  region: us-east-1
   app: mysite-polls
   env: https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/applications
   bucket_name: minibus
   endpoint: s3.us-east-1.amazonaws.com
-
   on:
     branch: main
 
