@@ -8,7 +8,6 @@ install:
 
 before_script:
   - python manage.py makemigrations
-  - python manage.py migrate
 
 script:
   - black --check .
