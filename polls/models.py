@@ -20,9 +20,7 @@ class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
-    q = Question.objects.get(pk=1)
-    q.choice_set.create(choice_text='Not much', votes=0)
-    q.choice_set.create(choice_text='The sky', votes=0)
-    q.save()
     def __str__(self):
         return self.choice_text
+
+# Crate your views here.

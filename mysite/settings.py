@@ -25,7 +25,6 @@ SECRET_KEY = "21r4y+s4^fib+wo2*p4nljwhuu+by)u12yab!t9k#73dq&6t%"
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
     "mysite-polls-dev.us-west-2.elasticbeanstalk.com",
 ]
 
