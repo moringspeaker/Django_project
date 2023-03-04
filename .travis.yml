@@ -16,16 +16,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAV53JPCOWJGOUABFV
-  secret_access_key: 5cdqFf06mTr7cgHt9O9BH2YqtWzMZBKgRYZilfCOG
-  region: us-east-1
-  app: mysite-polls
-  env: https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/applications
-  bucket_name: minibus
-  before_deploy:
-    - export AWS_DEFAULT_REGION=us-east-1
-  on:
-    branch: main
+  access_key_id:
+    secure: "AKIAV53JPCOWOSLOIZ4I"
+  secret_access_key:
+    secure: "E67z9OTHUfv/4fYJwQcBvU4U5QkuJUnSQ1rifNNiJ"
+  region: "us-east-1"
+  app: "mysite-polls"
+  env: "mysite-polls-dev"
+  bucket_name: "minibus"
 
 after_script:
   - coveralls
